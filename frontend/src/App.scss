@@ -1,0 +1,134 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@font-face {
+    font-family: "Light"; 
+    src: local("CachaPersonalUseRegular-GOx6g"),
+        url("./assets//fonts/CachaPersonalUseRegular-GOx6g.ttf")
+            format("truetype");
+}
+
+@font-face {
+    font-family: "Skylens"; 
+    src: local("SkylensitalicpersonaluseBdit-Yz8gq"),
+        url("./assets/fonts/SkylensitalicpersonaluseBdit-Yz8gq.otf")
+            format("truetype");
+}
+
+@font-face {
+    font-family: "Concrete"; 
+    src: local("ConcretepersonaluseRegular-DOzG0"),
+        url("./assets/fonts/ConcretepersonaluseRegular-DOzG0.otf")
+            format("truetype");
+}
+
+
+@font-face {
+    font-family: "Aquire"; 
+    src: local("AquireBold-8Ma60"),
+        url("./assets/fonts/AquireBold-8Ma60.otf")
+            format("truetype");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+main {
+    min-height: 80vh;
+    font-family: "Roboto";
+}
+
+@media only screen and (max-width: 600px) {
+    .authenticate-group {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.authen-change {
+    text-decoration: underline;
+    &:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
+}
+.profile-access-default {
+    &:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
+}
+.profile-access {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    &:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
+}
+
+.table-responsive {
+    border-radius: 5px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.range-slider__wrap {
+    display: flex;
+    justify-content: center;
+}
+.range-slider.range-slider--primary {
+    margin-right: 10px;
+}
+
+.btn-newchat {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-image{
+    &:hover{
+        opacity: 0.75;
+    }
+}
